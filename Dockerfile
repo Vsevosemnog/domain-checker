@@ -9,6 +9,7 @@ apt-get install -y \
 libcpprest-dev libboost-all-dev openssl libsodium-dev libopus-dev libpthread-stubs0-dev && \
 wget -O dpp.deb https://dl.dpp.dev/ && \
 dpkg -i dpp.deb && \
+apt --fix-broken install && \
 cmake . && \
 make
 
